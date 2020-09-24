@@ -6,7 +6,7 @@ import NavBar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Inicio from "./components/Inicio";
 import Registro from "./components/Registro";
-
+import Bienvenido from "./components/Bienvenido"
 function App() {
   return (
     <Router>
@@ -45,6 +45,9 @@ function App() {
         <Route path="/registro">
           <Registro />
         </Route>
+        <Route path="/bienvenido">
+            <Bienvenido />
+          </Route>
       </Switch>
     </Router>
   );
