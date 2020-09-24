@@ -1,13 +1,12 @@
 import React from "react";
 import NavBar from "./Navbar";
 import "./Inicio.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 export const Inicio = () => {
   return (
-    <Router>
-      <Switch>
-        <Route path="/inicio_sesion">
+
           <div className="inicio">
             <NavBar />
             <div className="container">
@@ -41,19 +40,18 @@ export const Inicio = () => {
                 <button
                   type="btn"
                   className="btn btn-lg active btn-block mt-5 rounded-pill"
-                >
-                  <Link className="text-white" to="/bienvenido">
-                    Iniciar
+                > 
+                <Link to="/bienvenido" className="text-white">
+                Iniciar
                 </Link>
+
+
                 </button>
               </div>
             </div>
           </div>
           
-        </Route>
-      </Switch>
 
-    </Router>
 
 
   );

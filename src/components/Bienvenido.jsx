@@ -14,7 +14,7 @@ export const Bienvenido = () => {
                 </div>
             </div>
             <div className="container">
-            <div className="position">
+            <div className="position_b">
                 <button
                   type="btn"
                   className="btn btn-lg active btn-block mt-5 rounded-pill text-white"
