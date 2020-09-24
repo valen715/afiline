@@ -20,11 +20,10 @@ const Registro = () => {
       <div className="img-button">
         <button
           type="button"
-          className="btn btn-outline-dark rounded-circle font-weight-bolder"
-        >
-          +
+          className="btn btn-outline-dark rounded-circle font-weight-bolder">
         </button>
       </div>
+      
       <div className="container">
         <p className="font_weight m-0 ml-1 mt-3">Nombre completo*</p>
         <div className="input-group mb-3 ">
