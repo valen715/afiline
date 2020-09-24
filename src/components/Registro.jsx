@@ -21,6 +21,7 @@ const Registro = () => {
         <button
           type="button"
           className="btn btn-outline-dark rounded-circle font-weight-bolder">
+            +
         </button>
       </div>
       
