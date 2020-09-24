@@ -1,13 +1,13 @@
 import React from "react";
 import NavBar from "./Navbar";
-import "./Inicio.css"
+import "./Inicio.css";
 
 export const Inicio = () => {
   return (
     <div className="inicio">
       <NavBar />
       <div className="container">
-        <div className="titulo mt-5">
+        <div className="titulo ">
           <h1>Iniciar sesión</h1>
         </div>
         <div className="entrada">

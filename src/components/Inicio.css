@@ -3,6 +3,10 @@
     font-size: x-large;
     text-align: center;
 }
+.inicio .container .titulo {
+    margin-top: 70px;
+}
+
 .container .entrada {
     margin-top: 10rem;
 }
@@ -11,6 +15,6 @@
     font-size: small;
 }
 
-.container .position {
-    margin-top: 18rem;
+.inicio .container .position {
+    margin-top: 15rem;
 }
