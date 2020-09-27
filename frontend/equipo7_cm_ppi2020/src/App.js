@@ -12,7 +12,7 @@ function App() {
             <NavBar />
             <div className="img-logo">
               <div className="col-md-6 mx-auto d-flex justify-content-center mt-5">
-                <img src={logoAfiline} alt="" srcSet="" />
+                <img src={logoAfiline} alt="" srcSet="" Style="width: 230px;" />
               </div>
             </div>
             <div className="container">

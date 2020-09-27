@@ -2,6 +2,7 @@ import React from "react";
 import "./Registro.css";
 import NavBar from "./Navbar";
 import Registroimg from "./registro.png";
+import { Link } from "react-router-dom";
 
 const Registro = () => {
   return (
@@ -76,7 +77,9 @@ const Registro = () => {
             type="btn"
             className="btn btn-lg active btn-block rounded-pill text-white"
           >
+             <Link to="/bienvenido" className="text-white">
             Crear
+            </Link>
           </button>
         </div>
       </div>
