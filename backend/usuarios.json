@@ -1,0 +1,26 @@
+[
+ {
+   "id":1,
+  "nombre" : "Maicol",
+  "apellido": "Morales",
+  "correo" : "3morales04@gmail.com" 
+},
+{
+  "id":2,
+  "nombre" : "Valentina",
+  "apellido": "Pulgarín",
+  "correo" : "valentinapf03@gmail.com" 
+},
+{
+  "id":3,
+  "nombre" : "Juan Fernando",
+  "apellido": "Castaño",
+  "correo" : "juanducas446@gmail.com" 
+},
+{
+  "id":4,
+  "nombre" : "Valentina",
+  "apellido": "Restrepo",
+  "correo" : "vrestrepomontoya@gmail.com" 
+}
+]

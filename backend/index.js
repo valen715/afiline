@@ -1,10 +1,22 @@
-const express = require('express')
-const app = express()
+const express = require("express");
+const path = require("path");
+const morgan = require("morgan");
+const app = express();
 
-app.get('/Afiline', function(req, res) {
+//Middlewares
+app.use(morgan('dev'))
+app.use(express.json())
 
-    res.send(`Afiline (Administracón financiera en linea)`);
+//Routes
+app.use("/api/", require("./routes/usuarios"))
+
+app.get("/", (req, res) =>{
+  res.send("Api Afiline")
 });
-app.listen(5057, function(){
-    console.log("Servidor corriendo en el puerto 5057")
-});  
+
+app.set("puerto", 8081)
+
+app.listen(app.get("puerto"), () =>{
+  
+  console.log("Servidor corriendo en el puerto " + app.get("puerto"));
+});
