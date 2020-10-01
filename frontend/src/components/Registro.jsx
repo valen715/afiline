@@ -1,13 +1,13 @@
 import React from "react";
 import "./Registro.css";
-import NavBar from "./Navbar";
+import Navbar from "./Navbar";
 import Registroimg from "./registro.png";
 import { Link } from "react-router-dom";
 
 const Registro = () => {
   return (
     <div className="registro">
-      <NavBar />
+      <Navbar titulo="Registro" />
       <div className="titulo">
         <div className="text-center mt-2">
           <p>Crear perfil</p>
