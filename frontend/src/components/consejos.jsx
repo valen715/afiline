@@ -10,7 +10,7 @@ export const consejos = () => {
                 <h1 >Lista de consejos </h1>
             </div>
             <div>
-                <body>
+                
                     <ul>
                         <li>
                            No buscar calidades innecesarias 
@@ -43,7 +43,7 @@ export const consejos = () => {
                             Manten un manejo adecuado de tus instalaciones eléctricas
                         </li>
                     </ul>
-                </body>
+            
             </div>
 
         </div>
