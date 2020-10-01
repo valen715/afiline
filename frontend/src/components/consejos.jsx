@@ -1,15 +1,15 @@
 import React from "react";
-import "./consejos.css";
-import NavBar from "./Navbar";
+import Navbar from "./Navbar";
 
-export const consejos = () => {
+
+export const Consejos = () => {
     return (
         <div className="pantalla_bienvenido">
-            <NavBar/>
+            <Navbar titulo="Consejos"/>
             <div className="parrafo mt-5">
                 <h1 >Lista de consejos </h1>
             </div>
-            <div>
+            <div className="mt-4">
                 
                     <ul>
                         <li>
@@ -50,4 +50,4 @@ export const consejos = () => {
     );
 };
 
-export default consejos;
+export default Consejos;

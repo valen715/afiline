@@ -1,12 +1,11 @@
 import React from "react";
-import "./ayuda.css";
-import NavBar from "./Navbar";
+import Navbar from "./Navbar";
 import logoAfiline from "./LogoAfiline.png";
 
-export const ayuda = () => {
+export const Ayuda = () => {
     return (
         <div className="pantalla_bienvenido">
-            <NavBar/>
+            <Navbar titulo="Ayuda"/>
             <div>
             <div className="container parrafo mt-4 ">
                 <h1 > Ayuda </h1>
@@ -27,4 +26,4 @@ export const ayuda = () => {
     );
 };
 
-export default ayuda;
+export default Ayuda;

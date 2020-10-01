@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./Navbar";
+import Navbar from "./Navbar";
 import "./Inicio.css";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,9 @@ export const Inicio = () => {
   return (
 
           <div className="inicio">
-            <NavBar />
+            <div className="navbar_inicio">
+            <Navbar titulo="Inicio"/>
+            </div>
             <div className="container">
               <div className="titulo ">
                 <h1>Iniciar sesión</h1>

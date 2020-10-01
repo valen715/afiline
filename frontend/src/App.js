@@ -2,14 +2,14 @@ import React from "react";
 import "./App.css";
 import logoAfiline from "./components/LogoAfiline.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import { Link } from "react-router-dom";
 
 function App() {
   return (
 
           <div className="App">
-            <NavBar />
+            <Navbar titulo="Bienvenidos"/>
             <div className="img-logo">
               <div className="col-md-6 mx-auto d-flex justify-content-center mt-5">
                 <img src={logoAfiline} alt="" srcSet="" Style="width: 230px;" />
