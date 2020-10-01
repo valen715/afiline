@@ -39,7 +39,6 @@ export const consejos = () => {
                         <li>
                             Decide cuales son tus prioridades
                         </li>
-                        
                         <li>
                             Manten un manejo adecuado de tus instalaciones eléctricas
                         </li>
