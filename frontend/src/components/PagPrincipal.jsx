@@ -5,6 +5,7 @@ import Estadisticas from "./Estadisticas.png"
 import Consejos from "./Consejos.png"
 import Ayuda from "./Ayuda.png"
 import registro from "./registro.png"
+import {Link} from 'react-router-dom'
 
 export const PagPrincipal = () => {
     return (
@@ -24,7 +25,10 @@ export const PagPrincipal = () => {
                     className="btn btn-lg active btn-block mt-5 rounded-pill text-white"
                 >
                     <img src={Calculador} alt="" srcSet="" Style="width: 60px; margin-right: 20%" />
-            Calculador
+                    <Link className="text-white" to="calculador">
+                    Calculador
+                    </Link>
+            
             </button>
                 <button
                     type="btn"
