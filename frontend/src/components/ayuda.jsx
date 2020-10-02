@@ -15,6 +15,7 @@ export const Ayuda = () => {
                         Es un servicio para personas con ingresos que se les dificulta planificar su dinero en sus necesidades o gastos, se llama "Afiline' es un aplicativo web que les enseñará a manejar su salario de forma más adecuada para que asi vayan creando poco a poco un hábito de ahorro a diferencia de distintos modo manuales los cuales no son totalmente efectivos.
                 </p>
 
+
                 </div>
                 <div className="img_logo">
                     <div className="col-md-6 mt-5 mx-auto d-flex justify-content-center " >
