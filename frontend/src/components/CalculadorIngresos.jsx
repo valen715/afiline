@@ -78,7 +78,7 @@ export const CalculadorIngresos = () => {
                   type="btn"
                   className="btn btn-lg active rounded-pill text-white" Style ="margin-left:12rem; margin-top:-3rem;"
                 > 
-           <Link to="/bienvenido" className="text-white">
+           <Link to="/calculador" className="text-white">
                 Terminar
                 </Link>
 
