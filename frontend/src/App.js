@@ -18,8 +18,7 @@ function App() {
       <div className="container">
           <button
             type="btn"
-            className="btn btn-lg btn-block rounded-pill mt-2"
-          >
+            className="btn btn-lg btn-block rounded-pill ">
             <Link to="/inicio" className="text-white">
               Iniciar sesión
                 </Link>

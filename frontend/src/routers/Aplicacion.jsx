@@ -10,6 +10,7 @@ import CalculadorIngresos from "../components/CalculadorIngresos"
 import Estadisticas from "../components/Estadisticas"
 import App from '../App.js'
 import PagPrincipal from "../components/PagPrincipal"
+import Calculador from '../components/Calculador';
 
 function Aplicacion(){
     return(
@@ -28,7 +29,7 @@ function Aplicacion(){
 
 
           <Route exact path="/PagPrincipal" component={PagPrincipal}/>
-
+          <Route exact path="/calculador" component={Calculador}/>
         </Switch>
         </BrowserRouter>
     )

@@ -6,23 +6,15 @@ export const Calculador = () => {
     return (
         <div className="calculador">
             <div className="container">
-                <h1 className="text-center mt-5 ">Calculador</h1>
+                <h1 className="text-center mt-1 ">Calculador</h1>
                 <div className="button_1 ml-4 mr-4">
                     <button type="button" className="btn  btn-lg btn-block text-left" Style="color: #4c9954; background-color: #8bed96;">Ingresos<div className="ingresos-button">
-                        <button
-                            type="button"
-                            className="btn font-weight-bolder" Style="border: none; color: green; background-color: #8bed96 ">
-                            +
-                    </button>
+                     
                     </div></button>
                 </div>
                 <div className="button_2 ml-4 mr-4 mt-5">
                     <button type="button" className="btn  btn-lg btn-block text-left" Style="color: #4c9954; background-color: #8bed96;">Egresos <div className="ingresos-button">
-                        <button
-                            type="button"
-                            className="btn font-weight-bolder" Style="border: none; color: green; background-color: #8bed96 ">
-                            +
-                    </button>
+                        
                     </div>
                     </button>
                 </div>
