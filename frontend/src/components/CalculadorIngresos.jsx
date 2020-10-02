@@ -67,16 +67,16 @@ export const CalculadorIngresos = () => {
               </div>
               <button
           type="button"
-          className="btn btn-outline-dark rounded-circle font-weight-bolder" Style ="margin-top:8rem;">
+          className="btn btn-outline-dark rounded-circle font-weight-bolder" Style ="margin-top:0rem;">
             +
         </button>
         </div>
-              <div className="container">
-            <div className="position_b " Style="margin-top:0rem;">
+              <div className="container" >
+            <div className="position_b " >
               <div className="position">
                 <button
                   type="btn"
-                  className="btn btn-lg active mt-1 rounded-pill text-white"
+                  className="btn btn-lg active rounded-pill text-white" Style ="margin-left:12rem; margin-top:-3rem;"
                 > 
            <Link to="/bienvenido" className="text-white">
                 Terminar
