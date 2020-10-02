@@ -4,7 +4,7 @@ import Inicio from "../components/Inicio";
 import Registro from "../components/Registro";
 import Bienvenido from "../components/Bienvenido"
 import Consejos from "../components/Consejos"
-import Ayuda from "../components/ayuda"
+import Ayuda from "../components/Ayuda"
 import CalculadorEgresos from "../components/CalculadorEgresos"
 import CalculadorIngresos from "../components/CalculadorIngresos"
 import Estadisticas from "../components/Estadisticas"
