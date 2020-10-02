@@ -1,0 +1,10 @@
+.navbar-brand {
+  font-size: x-large;
+}
+.nav_bar {
+  background-color: #65a569;
+}
+.nav_bar .navbar-brand {
+  color: white;
+  pointer-events: none;
+}
