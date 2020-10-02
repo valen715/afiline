@@ -9,6 +9,7 @@ import CalculadorEgresos from "../components/CalculadorEgresos"
 import CalculadorIngresos from "../components/CalculadorIngresos"
 import Estadisticas from "../components/Estadisticas"
 import App from '../App.js'
+import PagPrincipal from "../components/PagPrincipal"
 
 function Aplicacion(){
     return(
@@ -20,10 +21,14 @@ function Aplicacion(){
           <Route exact path="/bienvenido" component={Bienvenido}/>
           <Route exact path="/consejos" component={Consejos}/>
           <Route exact path="/ayuda" component={Ayuda}/>
+<<<<<<< HEAD
           <Route exact path="/calculadoregresos" component={CalculadorEgresos}/>
           <Route exact path="/calculadoringresos" component={CalculadorIngresos}/>
           <Route exact path="/estadisticas" component={Estadisticas}/>
 
+=======
+          <Route exact path="/PagPrincipal" component={PagPrincipal}/>
+>>>>>>> a4a2498442aeaf06dd5f4ba29633a9d0a1bb8116
         </Switch>
         </BrowserRouter>
     )

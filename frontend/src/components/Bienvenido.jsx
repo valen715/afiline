@@ -1,6 +1,7 @@
 import React from "react";
 import "./Bienvenido.css";
 import logoAfiline from "./LogoAfiline.png";
+import {Link} from 'react-router-dom'
 
 export const Bienvenido = () => {
     return (
@@ -14,16 +15,18 @@ export const Bienvenido = () => {
                 </div>
             </div>
             <div className="container">
-            <div className="position_b">
-                <button
-                  type="btn"
-                  className="btn btn-lg active btn-block mt-5 rounded-pill text-white"
-                >
-                    Iniciar
+                <div className="position_bienvenido">
+                    <button
+                        type="btn"
+                        className="btn btn-lg active btn-block mt-5 rounded-pill text-white"
+                    >                    
+                        <Link to="/PagPrincipal" className="text-white">
+                Iniciar
+                </Link>
                 </button>
-              </div>
+                </div>
             </div>
-            
+
 
         </div>
     );
