@@ -1,6 +1,6 @@
 import React from "react";
 import "./Bienvenido.css";
-import logoAfiline from "./LogoAfiline.png";
+import LogoAfiline from "./LogoAfiline.png";
 import {Link} from 'react-router-dom'
 
 export const Bienvenido = () => {
@@ -11,7 +11,7 @@ export const Bienvenido = () => {
             </div>
             <div className="img_logo">
                 <div className="col-md-6 mt-5 mx-auto d-flex justify-content-center " >
-                    <img src={logoAfiline} alt="" srcSet="" Style="width: 300px " />
+                    <img src={LogoAfiline} alt="" srcSet="" Style="width: 300px " />
                 </div>
             </div>
             <div className="container">
