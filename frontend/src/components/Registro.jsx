@@ -72,7 +72,7 @@ const Registro = () => {
             Los campos (*) son obligatorios
           </p>
         </div>
-        <div className="positioon">
+        <div className="positioon_registro">
           <button
             type="btn"
             className="btn btn-lg active btn-block rounded-pill text-white"

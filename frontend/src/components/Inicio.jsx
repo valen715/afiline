@@ -38,7 +38,7 @@ export const Inicio = () => {
                   Los campos (*) son obligatorios
           </p>
               </div>
-              <div className="position">
+              <div className="position_inicio">
                 <button
                   type="btn"
                   className="btn btn-lg active btn-block mt-5 rounded-pill"

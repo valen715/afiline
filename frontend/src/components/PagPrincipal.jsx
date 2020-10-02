@@ -6,7 +6,7 @@ import Consejos from "./Consejos.png"
 import Ayuda from "./Ayuda.png"
 import registro from "./registro.png"
 
-export const Pagprincipal = () => {
+export const PagPrincipal = () => {
     return (
         <div className="container">
             <div >
@@ -51,4 +51,4 @@ export const Pagprincipal = () => {
         </div>
     )
 }
-export default Pagprincipal;
+export default PagPrincipal;

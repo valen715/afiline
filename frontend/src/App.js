@@ -11,33 +11,34 @@ function App() {
     <div className="App">
       <Navbar titulo="Bienvenidos" />
       <div className="img-logo">
-        <div className="col-md-6 mx-auto d-flex justify-content-center mt-5">
-          <img src={logoAfiline} alt="" srcSet="" Style="width: 230px;" />
+        <div className="col-md-6 mx-auto d-flex justify-content-center mt-1">
+          <img src={logoAfiline} alt="" srcSet="" Style="width: 260px;" />
         </div>
       </div>
       <div className="container">
-        <button
-          type="btn"
-          className="btn btn-lg btn-block rounded-pill mt-5"
-        >
-          <Link to="/inicio" className="text-white">
-            Iniciar sesión
+          <button
+            type="btn"
+            className="btn btn-lg btn-block rounded-pill mt-2"
+          >
+            <Link to="/inicio" className="text-white">
+              Iniciar sesión
                 </Link>
 
 
-        </button>
-        <button
-          type="btn"
-          className="btn btn-lg active btn-block mt-5 rounded-pill"
-        >
-          <Link to="/registro" className="text-white">
-            Crear una cuenta
+          </button>
+          <button
+            type="btn"
+            className="btn btn-lg active btn-block mt-2 rounded-pill"
+          >
+            <Link to="/registro" className="text-white">
+              Crear una cuenta
                </Link>
 
 
-        </button>
+          </button>
+        </div>
       </div>
-    </div>
+    
 
   );
 }
