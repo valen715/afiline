@@ -25,7 +25,7 @@ export const PagPrincipal = () => {
                     className="btn btn-lg active btn-block mt-5 rounded-pill text-white"
                 >
                     <img src={Calculador} alt="" srcSet="" Style="width: 60px; margin-right: 20%" />
-                    <Link className="text-white" to="calculador">
+                    <Link className="text-white" to="/calculador">
                     Calculador
                     </Link>
             
@@ -35,14 +35,18 @@ export const PagPrincipal = () => {
                     className="btn btn-lg active btn-block mt-5 rounded-pill text-white"
                 >
                     <img src={Estadisticas} alt="" srcSet="" Style="width: 60px; margin-right: 20%" />
-            Estadísticas
+                    <Link className="text-white" to="">
+                    Estadísticas
+                    </Link>
             </button>
                 <button
                     type="btn"
                     className="btn btn-lg active btn-block mt-5 rounded-pill text-white"
                 >
                     <img src={Consejos} alt="" srcSet="" Style="width: 60px; margin-right: 20%" />
-            Consejos
+                    <Link className="text-white" to="/consejos">
+                    Consejos
+                    </Link>
             </button>
                 <button
                     type="btn"

@@ -1,6 +1,6 @@
 import React from "react";
 import './Calculador.css'
-
+import {Link} from 'react-router-dom'
 
 export const Calculador = () => {
     return (
