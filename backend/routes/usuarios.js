@@ -13,7 +13,7 @@ router.get("/usuarios", (req, res)=>{
   res.json(JSONUsuarios)
 })
 router.post("/usuarios", (req, res) =>{
-  console.log("El tamaño es " + JSONUsuarios.length)
+  console.log("El ancho es " + JSONUsuarios.length)
   let id = JSONUsuarios.length + 1;
 
   res.send("Recibido")

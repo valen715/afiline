@@ -18,5 +18,5 @@ app.set("puerto", 8081)
 
 app.listen(app.get("puerto"), () =>{
   
-  console.log("Servidor corriendo en el puerto " + app.get("puerto"));
+  console.log("Servidor en el puerto " + app.get("puerto"));
 });
