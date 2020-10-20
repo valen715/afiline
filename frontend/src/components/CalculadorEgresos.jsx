@@ -34,7 +34,7 @@ export const CalculadorEgresos = () => {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Fecha en que paga el egreso"
+                      placeholder="Fecha en que recibió el egreso"
                     ></input>
                   </div>
                   </div>
@@ -59,7 +59,7 @@ export const CalculadorEgresos = () => {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Fecha en que paga el egreso"
+                      placeholder="Fecha en que recibió el egreso"
                     ></input>
                   </div>
                   </div>
