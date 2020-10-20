@@ -1,6 +1,6 @@
 
 .container .button_1{
-    margin-top: 10rem;
+    margin-top: 12rem;
 }
 .container .mas {
     margin-left: 4rem;
@@ -10,4 +10,11 @@
     margin-top: 5rem;
     margin-left: 6rem;
     margin-right: 6rem;
+}
+
+.calculador .container .button_1 .btn .ingresos {
+	padding-left: 146px;
+}
+.calculador .container .button_1 .btn .egresos {
+	padding-left: 146px;
 }

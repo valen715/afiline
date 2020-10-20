@@ -1,25 +1,32 @@
 import React from "react";
+import "./Estadísticas.css";
 import Navbar from "./Navbar";
-
-
+import {Link} from "react-router-dom";
 export const Estadisticas = () => {
-    return (
-        <div className="pantalla_bienvenido">
-            <Navbar titulo="Ayuda"/>
-            <div>
-            <div className="container parrafo mt-4 ">
-                <h1 > Ayuda </h1>
-            </div>
-            <div className ="container text-justify mt-4 ">
-                <p>
-                Es un servicio para personas con ingresos que se les dificulta planificar su dinero en sus necesidades o gastos, se llama "Afiline' es un aplicativo web que les enseñará a manejar su salario de forma más adecuada para que asi vayan creando poco a poco un hábito de ahorro a diferencia de distintos modo manuales los cuales no son totalmente efectivos.
-                </p>
-
-            </div>
-          
+  return (
+    <React.Fragment>
+      <Navbar titulo="Estadísticas" />
+      <h1>Estadísticas</h1>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <p className="fecha">Digite la fecha del balance deseado</p>
+            <input max="2020-12-31" min="2020-01-01" type="date" />
+          </div>
         </div>
+        <div className="est-btn">
+          <button
+            type="btn"
+            className="btn-est btn btn-lg active btn-block rounded-pill text-white"
+          >
+              <Link to="/pag_principal" className="text-white">
+              Pantalla principal
+              </Link>
+          </button>
         </div>
-    );
+      </div>
+    </React.Fragment>
+  );
 };
 
 export default Estadisticas;

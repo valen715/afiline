@@ -1,7 +1,11 @@
 .img-logo {
-  margin-top: 8rem;
+  margin: 4rem;
+  padding-top: 23px;
 }
 .container .btn {
-  
   background-color: #65a569;
+}
+
+.container {
+  padding-top: 10px;
 }

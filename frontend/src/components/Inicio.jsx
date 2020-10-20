@@ -8,9 +8,7 @@ export const Inicio = () => {
   return (
 
           <div className="inicio">
-            <div className="navbar_inicio">
-            <Navbar titulo="Inicio"/>
-            </div>
+            <Navbar titulo="Inicio de sesión"/>
             <div className="container">
               <div className="titulo ">
                 <h1>Iniciar sesión</h1>
@@ -38,7 +36,7 @@ export const Inicio = () => {
                   Los campos (*) son obligatorios
           </p>
               </div>
-              <div className="position_inicio">
+              <div className="position">
                 <button
                   type="btn"
                   className="btn btn-lg active btn-block mt-5 rounded-pill"

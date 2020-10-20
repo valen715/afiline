@@ -5,7 +5,7 @@ import logoAfiline from "./LogoAfiline.png";
 export const Ayuda = () => {
     return (
         <div className="pantalla_bienvenido">
-            <Navbar titulo="ayuda" />
+            <Navbar titulo="Ayuda" />
             <div>
                 <div className="container parrafo mt-4 ">
                     <h1 > Ayuda </h1>
