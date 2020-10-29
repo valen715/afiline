@@ -7,7 +7,7 @@ import App from '../App.js'
 import Calculador from '../components/Calculador';
 import CalculadorEgresos from '../components/CalculadorEgresos';
 import CalculadorIngresos from '../components/CalculadorIngresos';
-import Ayuda from '../components/Ayuda';
+import Ayuda from '../components/ayuda';
 import Consejos from '../components/Consejos';
 import PagPrincipal from '../components/PagPrincipal';
 import Estadisticas from '../components/Estadisticas';
