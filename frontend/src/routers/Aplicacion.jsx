@@ -8,7 +8,7 @@ import Calculador from '../components/Calculador';
 import CalculadorEgresos from '../components/CalculadorEgresos';
 import CalculadorIngresos from '../components/CalculadorIngresos';
 import Ayuda from '../components/ayuda';
-import Consejos from '../components/Consejos';
+import Consejos from '../components/consejos';
 import PagPrincipal from '../components/PagPrincipal';
 import Estadisticas from '../components/Estadisticas';
 import Calculador1 from '../components/Calculador1';
