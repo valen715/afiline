@@ -1,21 +1,46 @@
-const { Router }= require('express')
-const router = Router()
-const fs = require('fs')
-const FileUsuarios = fs.readFileSync('./usuarios.json', 'utf-8')
-const JSONUsuarios = JSON.parse(FileUsuarios)
+'use strict';
+const express = require('express');
 
-console.log(JSONUsuarios)
+const router = express.Router({ mergeParams: true });
+const usuarioController = require('../controllers/Usuarios.controller');
+const auth = require('../middlewares/auth');
 
-router.get("/", (req, res) => {
-  res.send("API Afiline usuarios")
-})
-router.get("/usuarios", (req, res)=>{
-  res.json(JSONUsuarios)
-})
-router.post("/usuarios", (req, res) =>{
-  console.log("El ancho es " + JSONUsuarios.length)
-  let id = JSONUsuarios.length + 1;
+router.post('/registro', usuarioController.registro);
+router.post('/iniciar', usuarioController.iniciar);
+router.get('/perfil', auth.verificarToken, usuarioController.perfil);
+router.patch(
+	'/cambiar-usuario',
+	auth.verificarToken,
+	usuarioController.cambiarUsuario,
+);
+router.patch(
+	'/cambiar-numero',
+	auth.verificarToken,
+	usuarioController.cambiarNumero,
+);
+router.patch(
+	'/cambiar-contrasena',
+	auth.verificarToken,
+	usuarioController.cambiarContrasena,
+);
+router.delete(
+	'/eliminar-usuario',
+	auth.verificarToken,
+	usuarioController.eliminarUsuario,
+);
 
-  res.send("Recibido")
-});
+/**
+ * Calculador
+ */
+router.get(
+	'/operaciones-mes/:year/:mes',
+	auth.verificarToken,
+	usuarioController.operacionesDelMes,
+);
+router.get(
+	'/operaciones-mes/ultimo',
+	auth.verificarToken,
+	usuarioController.operacionesUltimoMes,
+);
+
 module.exports = router;
