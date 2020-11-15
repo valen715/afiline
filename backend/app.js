@@ -1,9 +1,9 @@
-/** Archivo de inicialización del backend, acá se instancia todo lo que se va a utilizar */
 'use strict';
 if (process.env.NODE_ENV === 'dev' || process.env.NODE_ENV === undefined)
 	require('dotenv').config();
 const express = require('express');
 const logger = require('morgan');
+const cors = require('cors');
 
 const indexRouter = require('./routes/index');
 const usuariosRouter = require('./routes/usuarios');
@@ -11,6 +11,7 @@ const ingresosRouter = require('./routes/ingresos');
 const egresosRouter = require('./routes/egresos');
 
 const app = express();
+
 
 const db = require('./models/index');
 db.sequelize
@@ -23,8 +24,9 @@ db.sequelize
 		process.exit(1);
 	});
 
+app.use(cors());
 app.use(logger('dev'));
-app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 app.use('/', indexRouter);
 app.use('/usuarios', usuariosRouter);

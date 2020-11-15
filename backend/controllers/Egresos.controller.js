@@ -66,7 +66,7 @@ controller.agregar = async (req, res) => {
 			fecha,
 			id_usuario: req.usuario.id,
 		});
-		res.status(200).json({ statusText: 'Usuario registrado exitosamente' });
+		res.status(200).json({ statusText: 'Egreso registrado exitosamente' });
 	} catch (error) {
 		res.status(500).json({
 			statusError: `Ocurrio un error en el servidor ${error.message}`,
