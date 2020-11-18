@@ -12,6 +12,7 @@ app.use(express.json())
 
 //Routes
 app.use("/api", require('./routes/egresos'))
+app.use("/api", require('./routes/ingresos'))
 
 
 app.get('/', (req, res) => {
