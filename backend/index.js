@@ -13,7 +13,7 @@ app.use(express.json())
 //Routes
 app.use("/api", require('./routes/egresos'))
 app.use("/api", require('./routes/ingresos'))
-
+app.use("/api", require('./routes/usuarios'))
 
 app.get('/', (req, res) => {
     res.send('Api CRUD')

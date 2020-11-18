@@ -41,3 +41,36 @@ router.post("/nuevo-usuario", (req, res) => {
     res.json({ message: `Usuario creado` });
   });
 });
+
+router.put("/usuarios/:id", (req, res) => {
+  const { nombre_completo, ocupacion, numero, usuario, correo, contrasena } = req.body;
+  const { id } = req.params;
+  mysqlConnection.query(
+    `UPDATE usuarios SET nombre_completo =?, ocupacion =?, numero =?, usuario =?, correo =?, contrasena =? WHERE id =?`,
+    [nombre_completo, ocupacion, numero, usuario, correo, contrasena, id],
+    (err, rows, fields) => {
+      if (!err) {
+        res.json({ status: "Usuario actualizado" });
+      } else {
+        console.log(err);
+      }
+    }
+  );
+});
+
+router.delete("/usuarios/:id", (req, res) => {
+  const { id } = req.params;
+  mysqlConnection.query(
+    "DELETE FROM usuarios WHERE id = ?",
+    [id],
+    (err, rows, fields) => {
+      if (!err) {
+        res.json({ status: "Usuario eliminado" });
+      } else {
+        console.log(err);
+      }
+    }
+  );
+});
+
+module.exports = router;
