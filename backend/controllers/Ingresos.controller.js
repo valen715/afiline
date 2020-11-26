@@ -47,7 +47,7 @@ controller.obtener = async (req, res) => {
 
 controller.agregar = async (req, res) => {
 	const { valor, fecha, nombre } = req.body;
-	// Deconstrucción y Comprobación de la petición
+
 	if (
 		(valor === undefined) |
 		(fecha === undefined) |
@@ -59,7 +59,7 @@ controller.agregar = async (req, res) => {
 		return;
 	}
 	try {
-		//Good ending: Registrar el Ingreso
+	
 		await Ingreso.create({
 			nombre,
 			valor,
