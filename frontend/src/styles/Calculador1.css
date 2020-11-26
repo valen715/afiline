@@ -1,0 +1,37 @@
+.egt {
+    background-color: #82d78b;
+
+}
+
+.table {
+    display: absolute;
+}
+
+.bdy {
+    position: absolute;
+    top: 7rem;
+}
+
+.calculador1 {
+    position: relative;
+}
+
+.cal-btn {
+    display: inline-block;
+    border-top-color: white;
+    border-right-color: white;
+
+
+}
+
+.cal-btn1 {
+    display: inline-block;
+    border-top-color: white;
+    border-left-color: white;
+}
+
+.tc-cal{
+    color: #25592b;
+}
+
+/*  345.200 - 142.400*/
