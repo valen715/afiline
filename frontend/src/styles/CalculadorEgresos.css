@@ -1,0 +1,15 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.pantalla_bienvenido .texto{
+    margin-top: 7rem;
+}
+
+.container .btn_malucoo{
+    position:absolute;
+    bottom: 2.1rem;
+}
+
+.btn-slash {
+    padding-left: 14px;
+    padding-right: 14px;
+}
