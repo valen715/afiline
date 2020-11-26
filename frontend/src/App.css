@@ -1,11 +1,18 @@
 .img-logo {
-  margin: 4rem;
-  padding-top: 23px;
+	margin: 4rem;
+	padding-top: 23px;
 }
 .container .btn {
-  background-color: #65a569;
+	background-color: #65a569;
 }
 
 .container {
-  padding-top: 10px;
+	padding-top: 10px;
+}
+.mh-36vh {
+	max-height: 36vh !important;
+}
+
+.h-36vh {
+	height: 36vh !important;
 }
