@@ -17,7 +17,7 @@ controller.registro = async (req, res) => {
 		contrasena,
 	} = req.body;
 	try {
-		// Deconstrucción y Comprobación de la petición
+		
 		if (
 			(nombre_completo === undefined) |
 			(ocupacion === undefined) |
@@ -31,8 +31,6 @@ controller.registro = async (req, res) => {
 			});
 			return;
 		}
-
-		// Comprobación de existencia de un usuario con mismos datos
 		let nuevoUsuario = null;
 		nuevoUsuario = await Usuario.findOne({
 			where: { usuario },
@@ -52,7 +50,6 @@ controller.registro = async (req, res) => {
 			});
 			return;
 		}
-		//Good ending: Registrar el usuario
 		await Usuario.create({
 			nombre_completo,
 			ocupacion,
@@ -71,7 +68,7 @@ controller.iniciar = async (req, res) => {
 	const { numero, usuario, contrasena } = req.body;
 	console.log(req.body);
 	try {
-		// Deconstrucción y Comprobación de la petición
+
 		if (
 			(usuario === undefined && numero === undefined) |
 			(contrasena === undefined)
@@ -82,8 +79,6 @@ controller.iniciar = async (req, res) => {
 			});
 			return;
 		}
-
-		// Comprobación de existencia de un usuario con mismos datos
 		const usuarioDB = await Usuario.findOne({
 			where: {
 				[Op.or]: [{ usuario: usuario || '' }, { numero: numero || '' }],
@@ -106,7 +101,7 @@ controller.iniciar = async (req, res) => {
 					{ id: usuarioDB.id },
 					process.env.SECRET,
 					{
-						expiresIn: 7 * 24 * 60 * 60 * 1000, // 7 dias, 24 horas, 60 minutos, 60 segundos, 1000 milisegundos = Una semana
+						expiresIn: 7 * 24 * 60 * 60 * 1000, 
 					},
 				);
 				const usuarioPlano = usuarioDB.toJSON();
@@ -257,7 +252,6 @@ controller.eliminarUsuario = async (req, res) => {
 	}
 };
 
-// Calculador
 controller.operacionesDelMes = async (req, res) => {
 	const { year, mes } = req.params;
 	if (!year | !mes) {
