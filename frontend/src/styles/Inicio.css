@@ -1,0 +1,21 @@
+.inicio .titulo {
+    color: black;
+    font-size: x-large;
+    text-align: center;
+}
+.inicio .container .titulo {
+    margin-top: 70px;
+}
+
+.container .entrada {
+    margin-top: 6rem;
+}
+.container .campos {
+    margin-left: 10.8rem;
+    font-size: small;
+}
+
+.inicio .container .position {
+    margin-top: 7.5rem;
+    margin-left: 12rem;
+}
