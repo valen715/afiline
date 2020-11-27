@@ -1,0 +1,32 @@
+  
+.container .positioon {
+  margin-left: 12rem;
+}
+.container .campos {
+  margin-left: 10.8rem;
+  font-size: small;
+}
+.registro .titulo {
+  font-size: x-large;
+}
+
+.registro .img-button {
+  margin-left: 13.5rem;
+  margin-top: -3rem;
+}
+.registro .img-button .btn {
+  border-width: 3px;
+  border-color: black;
+  font-size: x-large;
+  color: black;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.registro .container .font_weight {
+  font-weight: 500;
+}
+.registro .titulo {
+  font-weight: 500;
+}
