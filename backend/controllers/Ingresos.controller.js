@@ -201,4 +201,7 @@ controller.eliminarIngreso = async (req, res) => {
 	}
 };
 
+
+
+
 module.exports = controller;
