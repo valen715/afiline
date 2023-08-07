@@ -3,6 +3,8 @@ const config = require('../config/db.config');
 
 const Sequelize = require('sequelize');
 
+console.log(config.HOST, config.DB)
+
 const sequelize = new Sequelize(config.DB, config.USER, config.PASSWORD, {
 	host: config.HOST,
 	dialect: config.dialect,
@@ -14,6 +16,8 @@ const sequelize = new Sequelize(config.DB, config.USER, config.PASSWORD, {
 		idle: config.pool.idle,
 	},
 	define: { engine: 'InnoDB' },
+	port:"3308",
+    multipleStatements: true,
 });
 
 const db = { sequelize, Sequelize };
