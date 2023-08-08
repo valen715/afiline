@@ -4,6 +4,7 @@ if (process.env.NODE_ENV === 'dev' || process.env.NODE_ENV === undefined)
 const express = require('express');
 const logger = require('morgan');
 const cors = require('cors');
+const path = require('path');
 const indexRouter = require('./routes/index');
 const usuariosRouter = require('./routes/usuarios');
 const ingresosRouter = require('./routes/ingresos');
@@ -32,9 +33,12 @@ app.use('/usuarios', usuariosRouter);
 app.use('/ingresos', ingresosRouter);
 app.use('/egresos', egresosRouter);
 
-app.get('/', (res) => {
-	res.send('Hello World!');
-});
+// app.get('/', (res) => {
+// 	res.send('Hello World!');
+// });
+// app.get('/*', function (req, res) {
+// 	res.sendFile(path.join(__dirname, 'www/html', 'index.html'));
+// });
 
 app.listen(process.env.PORT || 3000, () => {
 	console.log(

@@ -68,16 +68,8 @@ controller.iniciar = async (req, res) => {
 	const { numero, usuario, contrasena } = req.body;
 	console.log(req.body);
 	try {
-
-		if (
-			(usuario === undefined && numero === undefined) |
-			(contrasena === undefined)
-		) {
-			res.status(400).json({
-				statusError:
-					'Mala peticion, debe tener (numero o usuario) y contrasena.',
-			});
-			return;
+		if ((!usuario && !numero) | (!contrasena)) {
+			return res.status(400).json({statusError:'Mala peticion, debe tener (numero o usuario) y contrasena.'});
 		}
 		const usuarioDB = await Usuario.findOne({
 			where: {
@@ -85,30 +77,29 @@ controller.iniciar = async (req, res) => {
 			},
 		});
 		if (usuarioDB === null) {
-			res.status(404).json({
-				statusError:
-					'No existe un usuario con ese nombre de usuario o numero telefonico',
-			});
-		} else {
-			const esContrasenaValida = await bcrypt.compare(
-				contrasena,
-				usuarioDB.contrasena,
-			);
-			if (esContrasenaValida === false) {
-				res.status(401).json({ statusError: 'Contrasena Incorrecta' });
-			} else {
-				const token = jwt.sign(
-					{ id: usuarioDB.id },
-					process.env.SECRET,
-					{
-						expiresIn: 7 * 24 * 60 * 60 * 1000, 
-					},
-				);
-				const usuarioPlano = usuarioDB.toJSON();
-				delete usuarioPlano.contrasena;
-				res.status(200).json({ usuario: usuarioPlano, token: token });
-			}
+			return res.status(404).json({statusError:'No existe un usuario con ese nombre de usuario o numero telefonico',});
 		}
+		const esContrasenaValida = await bcrypt.compare(
+			contrasena,
+			usuarioDB.contrasena,
+		);
+		if (esContrasenaValida === false) {
+			return res.status(401).json({ statusError: 'Contrasena Incorrecta' });
+		}
+		console.log('crear')
+		console.log(usuarioDB.id)
+		const token = jwt.sign(
+			{ id: usuarioDB.id },
+			process.env.SECRET,
+			{
+				expiresIn: 7 * 24 * 60 * 60 * 1000, 
+			},
+		);
+		console.log('creado')
+		const usuarioPlano = usuarioDB.toJSON();
+		delete usuarioPlano.contrasena;
+		res.status(200).json({ usuario: usuarioPlano, token: token });
+
 	} catch (error) {
 		res.status(500).json({
 			statusError: `Ocurrio un error en el servidor ${error.message}`,
@@ -137,7 +128,7 @@ controller.cambiarUsuario = async (req, res) => {
 				res.status(401).json({ statusText: 'Contrasena incorrecta' });
 				return;
 			}
-
+			
 			if (instanciaUsuario.nombreUsuario == nombreUsuario) {
 				res.status(304).json({
 					statusError:
