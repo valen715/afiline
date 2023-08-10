@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "react-router-dom": "^6.14.2"
+    "react-router-dom": "^6.14.2",
+    "build": "react-scripts --openssl-legacy-provider build"
   }
 }
