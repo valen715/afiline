@@ -3,8 +3,10 @@
     "@vercel/node": "^2.15.9",
     "react-router-dom": "^6.14.2"
   },
-    "scripts": {
-      "vercel-build": "node ./custom-build-script.ts && next build"
-    }
-  
+  "scripts": {
+    "vercel-build": "node ./custom-build-script.ts && next build"
+  },
+  "engines": {
+    "node": "18.x"
+  }
 }
